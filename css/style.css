@@ -151,9 +151,6 @@ section p {
   .video-pres {
     width: auto;
   }
-  .pres-index {
-    display: none;
-  }
   .container {
     padding: 5px;
     display: flex;
