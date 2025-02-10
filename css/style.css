@@ -1,0 +1,218 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*estilos generales*/
+body {
+  background-color: #FCE7C8;
+}
+
+/*estilos de header*/
+header {
+  text-align: center;
+}
+
+.navbar {
+  background-color: white;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.navbar-tog:focus, .button-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-l {
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-l:hover, .nav-link:active {
+  color: coral;
+}
+
+.nav-l:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: coral;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-l:hover:before {
+  width: 100%;
+  visibility: visible;
+}
+
+.logo-dest {
+  width: 80px;
+  border-radius: 25px;
+}
+
+.menu {
+  list-style: none;
+  display: block;
+  padding: 10px;
+}
+
+/*estilos index y artistas*/
+section {
+  text-align: center;
+  margin-top: 7rem;
+}
+section h1 {
+  background-color: coral;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+section h2 {
+  background-color: coral;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* artistas destacados */
+.img-dest {
+  width: 200px;
+}
+
+.img-dest:hover {
+  opacity: 0.5;
+}
+
+.destacados-art {
+  background-color: coral;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.destacados p {
+  font-size: 25px;
+}
+
+section p {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  margin: 20px;
+}
+
+.nosotros {
+  font-size: 35px;
+}
+
+.destacados .bio-text {
+  font-size: 20px;
+}
+
+.calendario {
+  display: flex;
+  margin: auto;
+}
+
+.dias-calendario {
+  list-style: none;
+}
+
+.mes {
+  border-radius: 10cm;
+  background-color: coral;
+}
+
+.model-art {
+  background-color: #FADA7A;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .calendario {
+    display: grid;
+  }
+}
+@media (max-width: 600px) {
+  .video-pres {
+    width: auto;
+    display: none;
+  }
+  .pres {
+    display: none;
+  }
+  .container {
+    padding: 5px;
+    display: flex;
+  }
+  .box {
+    margin: 15px;
+  }
+  .nosotros {
+    font-size: 14px;
+  }
+  .destacados .bio-text {
+    font-size: 15px;
+  }
+  .calendario {
+    display: block;
+  }
+}
+.form-container {
+  padding: 15px;
+  border: 2px solid #ccc;
+  background-color: #FCE7C8;
+  align-items: center;
+  text-align: center;
+}
+
+/*estilos media y tour*/
+.carousel-item {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  margin-top: 7rem;
+}
+main h1 {
+  background-color: coral;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.box-calendario {
+  margin: 15px;
+  text-align: center;
+}
+
+/*estilos footer*/
+footer {
+  margin-top: 100px;
+  background-color: #FADA7A;
+}
+footer div div ul {
+  display: flex;
+}
+footer div div ul li {
+  list-style: none;
+  text-decoration: none;
+}
+footer div div ul li a img:hover {
+  opacity: 0.5;
+}
+
+.copy {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

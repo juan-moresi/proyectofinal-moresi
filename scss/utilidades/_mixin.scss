@@ -1,0 +1,43 @@
+//import paleta colores
+@import "../utilidades/variables";
+
+//mixin para nav
+
+@mixin nav{
+    background-color: white;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+//mixin focus
+
+@mixin focus{
+    box-shadow: none;
+    outline: none;
+}
+
+//mixin nav-l:before|
+
+@mixin  navbefore{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 0;
+    height:2px;
+    background-color:$color-style ;
+    visibility: hidden;
+    transition:0.3s ease-in-out;
+}
+
+//mixin menu
+
+@mixin menu{
+    list-style: none;
+    display: block;
+    padding: 10px;
+    
+}

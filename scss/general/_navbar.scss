@@ -1,0 +1,48 @@
+//import mixin
+
+@import "../utilidades/mixin";
+
+//import variables
+
+@import "../utilidades/variables";
+
+/*estilos de header*/
+
+header{
+    text-align: center;
+}
+
+.navbar{
+    @include nav;
+}
+
+.navbar-tog:focus, .button-close:focus{
+    @include focus;
+}
+
+.nav-l{
+    font-weight: 500;
+    position:relative;
+}
+
+.nav-l:hover, .nav-link:active{
+    color: $color-style;
+}
+
+.nav-l:before{
+    @include navbefore;
+}
+
+.nav-l:hover:before{
+    width: 100%;
+    visibility: visible;
+}
+
+.logo-dest{
+    width: 80px;
+    border-radius: 25px;
+}
+
+.menu{
+    @include menu;
+}

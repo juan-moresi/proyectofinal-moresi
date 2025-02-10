@@ -1,0 +1,134 @@
+@import "../utilidades/variables";
+
+
+
+/*estilos index y artistas*/
+
+section{
+    text-align: center;
+    margin-top: 7rem;
+    h1{
+        background-color: $color-style;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+
+section{
+    h2{
+        background-color: $color-style;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+    }
+}
+
+/* artistas destacados */
+.img-dest{
+    width: 200px;
+}
+
+.img-dest:hover{
+    opacity: 0.5;
+}
+
+.destacados-art{
+    background-color: $color-style;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.destacados{
+    p{
+        font-size: 25px;
+    }
+}
+
+section{
+    p{
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+.container{
+    display: flex;
+}
+
+.box{
+    margin: 20px;
+}
+
+
+.nosotros{
+    font-size: 35px;
+}
+
+.destacados{
+    .bio-text{
+        font-size: 20px;
+    }
+}
+
+.calendario{
+    display: flex;
+    margin: auto;
+}
+
+.dias-calendario{
+    list-style: none;
+}
+
+.mes{
+    border-radius: 10cm;
+    background-color: $color-style;
+}
+.model-art{
+    background-color:  #FADA7A;
+    ;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px){
+    .calendario{
+        display:grid;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .video-pres{
+        width: auto;
+        display: none;
+    }
+
+    .pres{
+        display: none;
+    }
+        
+    .container{
+        padding: 5px;
+        display: flex;
+    }
+    
+    .box{
+        margin: 15px;
+    }
+    .nosotros{
+        font-size: 14px;
+    }    
+
+    .destacados{
+        .bio-text{
+            font-size: 15px;
+        }
+    }
+    .calendario{
+        display: block;
+    }
+}
+
+
+
+.form-container {
+    padding: 15px;
+    border: 2px solid #ccc;
+    background-color: $color-principal;
+    align-items: center;
+    text-align: center;
+}
