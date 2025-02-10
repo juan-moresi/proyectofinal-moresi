@@ -144,11 +144,14 @@ section p {
   }
 }
 @media (max-width: 600px) {
-  .video-pres {
+  .video-pres-index {
     width: auto;
     display: none;
   }
-  .pres {
+  .video-pres {
+    width: auto;
+  }
+  .pres-index {
     display: none;
   }
   .container {
